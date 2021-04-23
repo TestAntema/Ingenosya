@@ -10,9 +10,9 @@ import java.util.List;
 
 @Repository
 public interface CommentaireRepository extends JpaRepository<Commentaire, Integer>{
-    List<Commentaire> findByUtilisateur(@Param("idUtilisateur") int idUtilisateur);
+    List<Commentaire> findByUtilisateurIdUtilisateur(@Param("idUtilisateur") int idUtilisateur);
 
-    List<Commentaire> findByVoiture(@Param("idVoiture") int idVoiture);
+    List<Commentaire> findByVoitureIdVoiture(@Param("idVoiture") int idVoiture);
 
     void deleteByUtilisateur(@Param("idUtilisateur") int idUtilisateur);
 

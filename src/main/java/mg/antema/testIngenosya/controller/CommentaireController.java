@@ -23,7 +23,7 @@ public class CommentaireController {
 
     @GetMapping(value = "Voiture/Commentaire/{id}")
     public List<Commentaire> getVoitureCommentes(@PathVariable int id){
-        return cRepo.findByVoiture(id);
+        return cRepo.findByVoitureIdVoiture(id);
     }
 
     @GetMapping(value = "Commentaire/{id}")

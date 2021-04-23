@@ -1,5 +1,7 @@
 package mg.antema.testIngenosya.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.List;
 
 import javax.persistence.*;
@@ -14,6 +16,7 @@ public class Voiture {
     private String modele;
     private String ficheTech;
     private int prix;
+    @JsonIgnore
     @OneToMany(mappedBy = "voiture")
     private List<Commentaire> commentaires;
 

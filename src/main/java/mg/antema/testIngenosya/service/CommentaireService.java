@@ -31,11 +31,11 @@ public class CommentaireService {
     }
 
     public List<Commentaire> getByUtilisateur(int idUtilisateur){
-        return cRepo.findByUtilisateur(idUtilisateur);
+        return cRepo.findByUtilisateurIdUtilisateur(idUtilisateur);
     }
 
     public List<Commentaire> getByVoiture(int idVoiture){
-        return cRepo.findByVoiture(idVoiture);
+        return cRepo.findByVoitureIdVoiture(idVoiture);
     }
 
     public void deleteByIdUtilisateur(int idUtilisateur){
